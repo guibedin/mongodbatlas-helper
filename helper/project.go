@@ -18,6 +18,9 @@ func getProjectClusters(client *mongodbatlas.Client, groupID string) []model.Sim
 		simpleClusters = append(simpleClusters, model.SimpleCluster{
 			Name:     cluster.Name,
 			Hostname: cluster.MongoURI,
+			ConnectionStrings: model.SimpleConnectionStrings{
+				Standard:    cluster.ConnectionStrings.Standard,
+				StandardSrv: cluster.ConnectionStrings.StandardSrv},
 		})
 	}
 	return simpleClusters
