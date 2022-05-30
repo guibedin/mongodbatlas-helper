@@ -18,11 +18,17 @@ type SimpleProject struct {
 }
 ```
 
-You get only two fields of information for each cluster:
+You get three fields of information for each cluster:
 ```go
 type SimpleCluster struct {
 	Name     string
 	Hostname string
+    ConnectionStrings SimpleConnectionStrings
+}
+
+type SimpleConnectionStrings struct {
+	Standard    string
+	StandardSrv string
 }
 ```
 
