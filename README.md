@@ -2,9 +2,9 @@
 Helper functions for using the MongoDB Atlas Go Client - https://github.com/mongodb/go-client-mongodb-atlas
 
 # Motivation
-In my current job, it is usefeul to get some information about all projects of a given Atlas organization.
+I often need to get some information about all projects of a given Atlas organization.
 
-Instead of using `go-client-mongodb-atlas` everytime, I decided to create this simple script. It uses the `go-client-mongodb-atlas` to get the all information that I need in a single function call.
+Instead of using a bunch of calls using `go-client-mongodb-atlas` everytime, I decided to create this simple script. It uses the `go-client-mongodb-atlas` to get the all information that I need in a single function call.
 
 # Essential Information
 The information you get when using this helper is a list of `Projects` with this structure:
